@@ -85,7 +85,7 @@ form {
         
 
 .color-grid {
-    grid-template: repeat(auto-fit, minmax(90px, 1fr)) / 1fr;
+    grid-template: repeat(5, minmax(90px, 1fr)) / 1fr;
     height: 100%;
 }
         .color-grid img {
@@ -107,14 +107,14 @@ form {
             border-radius: 0.2em;
         } 
         
-    /* Media Queries */
-@media(min-width: 750px) {
+/* Media Queries */
+@media (min-width: 750px) {
     main {
         height: calc(100vh - 250px);
     }
     
     .color-grid {
-        grid-template: 1fr / repeat(auto-fit, minmax(150px, 1fr));
+        grid-template: 1fr / repeat(5, minmax(150px, 1fr));
         height: 100%;
     }
   
