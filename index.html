@@ -1,0 +1,39 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@400;900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <h1>color.me</h1>
+        </header>
+        
+        <main>
+            <section class="color-generator">
+                <form id="form" class="menu-bar flex justify-around align-center">
+                    <input id="color-input" type="color">
+                    <select required name="color-schemes-menu" id="color-schemes-select">
+                        <option disabled selected hidden value="">Select a mode...</option> 
+                        <option class="mode" value="monochrome">Monochrome</option> 
+                        <option class="mode" value="monochrome-dark">Monochrome-dark</option> 
+                        <option class="mode" value="monochrome-light">Monochrome-light</option> 
+                        <option class="mode" value="analogic">Analogic</option>
+                        <option class="mode" value="complement">Complement</option>
+                        <option class="mode" value="analogic-complement">Analogic-complement</option>
+                        <option class="mode" value="triad">Triad</option>
+                    </select>
+                    <button id="get-scheme" class="flex align-center">Get color scheme</button>
+                </form>
+            </section>
+            
+            <section id="colors-container" class="color-grid grid">
+                <!-- rendered by JS -->
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
