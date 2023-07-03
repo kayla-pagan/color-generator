@@ -51,24 +51,24 @@ form {
     height: 5.635em;
 }
         form input, form select, form button {
-            height: 3em;
+            height: 2.5em;
         }
 
         form input {
-            width: 3.5em;
+            width: 2.5em;
             border: 0.5px solid #D1D5DB;
         }
 
         form select {
-            width: 16em;
-            padding: 0.5em 1em;
+            width: 10em;
+            padding: 0.5em 0.7em;
             border-radius: 0.375em;
             -webkit-appearance: none;
             appearance: none;
             background-image: url("./img/chevron-down.svg");
             background-size: 1.3em;
             background-repeat: no-repeat;
-            background-position: calc(100% - 1em) center;
+            background-position: calc(100% - 0.5em) center;
         }
         
         form select option:disabled {
@@ -76,7 +76,7 @@ form {
         }
         
         form button {
-            padding: 0.8125em 0.6875em;
+            padding: 0.8125em 0.4875em;
             border: 1px solid #D1D5DB;
             border-radius: 0.25em;
             background-color: #fff;
@@ -108,6 +108,7 @@ form {
         } 
         
 /* Media Queries */
+
 @media screen {
     @media (min-width: 750px) {
         main {
@@ -125,5 +126,29 @@ form {
             background-color: transparent;
             position: static;
         }
+    }
+    
+    @media (min-width: 520px){
+        form input, form select, form button {
+            height: 3.5em;
+        }
+        
+        form input {
+            width: 3.5em;
+        }
+        
+         form select {
+            width: 16em;
+            padding: 0.5em 1em;
+            background-position: calc(100% - 1em) center;
+         }
+         
+         font select option, form button {
+             font-size: 1em;
+         }
+         
+          form button {
+            padding: 0.8125em 0.6875em;
+          }
     }
 }
